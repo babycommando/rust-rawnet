@@ -1,13 +1,11 @@
-/*
-A layer of neurons.
-Each neuron receives the same input vector, but has its own weights and bias.
-Each neuron produces its own output.
-Shows how a neural network layer is formed by multiple neurons operating in parallel.
-Still no learning, parameters are manually chosen.
+// A layer of neurons.
+// Each neuron receives the same input vector, but has its own weights and bias.
+// Each neuron produces its own output.
+// Shows how a neural network layer is formed by multiple neurons operating in parallel.
+// Still no learning, parameters are manually chosen.
 
-Outputs are grouped into a vector:
-layer_output = [output1, output2, output3]
-*/
+// Outputs are grouped into a vector:
+// layer_output = [output1, output2, output3]
 
 fn main() {
     let inputs = vec![1.0, 2.0, 3.0];
