@@ -1,3 +1,28 @@
+/*
+A trainable neuron with inference.
+This goes in two stages: 1 - training, 2 - inference.
+
+it learns that the number 1 is not cool, and the number 2 is cool.
+input → expected output
+1 → 0  (not cool)
+2 → 1  (cool)
+
+The neuron learns parameters (weight, bias) from a dataset.
+The training looo consists of:
+predict output
+compute error
+compute gradient
+adjust weight and bias
+Repeated many times until the model converges.
+
+input_number ----\
+                  > neuron -> sigmoid -> prediction
+bias ------------/
+
+After training, the neuron is used to classify new inputs.
+prediction > 0.5 → cool
+prediction ≤ 0.5 → not cool
+*/
 use std::io;
 
 fn sigmoid(value: f64) -> f64 {
